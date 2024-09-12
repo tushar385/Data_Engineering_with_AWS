@@ -29,7 +29,7 @@ aws s3 MV /home/ubuntu/Desktop/domain_count_per_org.csv s3://pique/ticket_2023_0
 aws s3 rm s3://pique/ticket_2023_07_18/abc.txt
 aws s3 rm s3://pique/ticket_2023_07_18 --recursive
 
-## to copy data from 1 aws to another
+## To copy data from 1 aws to another
 aws s3 sync s3://pique/mesa_snowflake/data_2020_thru_mar_2022/ s3://pique/raw_snowflake_sfdc_tables/ --profile old_aws-acc
 
 ## TO move DATA FROM LOCAL TO S3
@@ -39,5 +39,5 @@ aws s3 MV /home/ubuntu/Desktop/domain_count_per_org.csv s3://pique/ticket_2023_0
 aws s3 rm s3://pique/ticket_2023_07_18/abc.txt
 aws s3 rm s3://pique/ticket_2023_07_18 --recursive
 
-## to copy data from 1 aws to another
+## To copy data from 1 aws to another
 aws s3 sync s3://pique/mesa_snowflake/data_2020_thru_mar_2022/ s3://pique/raw_snowflake_sfdc_tables/ --profile old_aws-acc
