@@ -43,9 +43,9 @@ aws s3 rm s3://pique/ticket_2023_07_18 --recursive
 aws s3 sync s3://pique/mesa_snowflake/data_2020_thru_mar_2022/ s3://pique/raw_snowflake_sfdc_tables/ --profile old_aws-acc
 
 ## To configure aws by nano
-nano ~/.aws/credentials
-  [default]
-  aws_access_key_id = YOUR_ACCESS_KEY_ID
+nano ~/.aws/credentials  
+  [default]  
+  aws_access_key_id = YOUR_ACCESS_KEY_ID  
   aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
 
 nano ~/.aws/config
