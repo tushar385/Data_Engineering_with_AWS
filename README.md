@@ -44,13 +44,13 @@ aws s3 sync s3://pique/mesa_snowflake/data_2020_thru_mar_2022/ s3://pique/raw_sn
 
 ## To configure aws by nano
 nano ~/.aws/credentials  
-  [default]  
-  aws_access_key_id = YOUR_ACCESS_KEY_ID  
-  aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
+    [default]  
+    aws_access_key_id = YOUR_ACCESS_KEY_ID  
+    aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
 
-nano ~/.aws/config
-  [default]
-  region = us-east-1
-  output = json
+nano ~/.aws/config    
+    [default]    
+    region = us-east-1    
+    output = json    
 
 aws sts get-caller-identity
